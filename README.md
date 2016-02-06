@@ -55,7 +55,7 @@ Project Manager: Noam Hacker
 Last but not least,
 ##### Project Checklist (also see [Project Summary](http://noamhacker.com/projectsummary-noam.html))
 * install Rails and create a new app
-* facebook login/sessions
+* facebook login/sessions [link 1,](https://coderwall.com/p/bsfitw/ruby-on-rails-4-authentication-with-facebook-and-omniauth), [link 2](https://richonrails.com/articles/facebook-authentication-in-ruby-on-rails)
 * admin form for adding bands - can only submit with correct password - include city field and year field
   1. also a form for deleting a band
   2. also a form for updating a band
