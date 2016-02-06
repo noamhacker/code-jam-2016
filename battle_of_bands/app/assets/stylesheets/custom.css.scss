@@ -1,9 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.h1 {
-    font-size: 1.5em;
+body{
+  background: url('http://www.technobuffalo.com/wp-content/uploads/2015/11/concert-crowd.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#fff;
 }
+
+
+h1,h2 {
+    font-family: 'Oswald', sans-serif;
+    color:white;
+}
+
+h1{
+    font-size: 4em;
+}
+
 
 .band {
     position:relative;
@@ -15,10 +32,9 @@
 .band-img{
     position:relative;
     display: inline block;
-    width: 300px;
-    height: 300px;
-
-    z-index:1000;
+    width: 250px;
+    height: 250px;
+    z-index:1;
     background-image: url('http://u.scdn.co/images/pl/default/8554b898abb40faeac0d522d176304b6342be269');
 }
 
@@ -26,12 +42,24 @@
     position:relative;
     display: inline block;
     height: 300px;
-    background-color:yellow;
+    background-color: gray;
     padding: 20px;
+        z-index:1;
 }
 
 .social_share{
     position: relative;
     display:inline block;
     height:100px;
+}
+
+.container{
+    margin-top:10%;
+    background-color:rgba(0,0,0,0.9);
+    padding:20px;
+}
+
+button{
+     font-family: 'Oswald', sans-serif;
+
 }
