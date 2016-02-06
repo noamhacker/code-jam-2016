@@ -25,6 +25,7 @@ class BandsController < ApplicationController
      end
     end
     
+    
     def edit
     
     end
