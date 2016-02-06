@@ -66,3 +66,4 @@ Last but not least,
 * separate profile pages for bands? Or display info on index page
 * make sure everything works and looks good for mobile (chrome has great dev tools for this)
 * a simple donation system. This can include donating to March of Dimes, and individual bands
+* [add debug information to the site while in developer mode](https://www.railstutorial.org/book/_single-page#code-rails_debug)
