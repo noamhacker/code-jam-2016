@@ -13,7 +13,9 @@ class BandsController < ApplicationController
     end
     
     def create
-      @band = Band.new(band_params[:band])
+        @band_name = params[:name]
+      @band = Band.new(name: "noam")
+      @band.save
     if @band.save
       redirect_to @band
     else
@@ -28,7 +30,7 @@ class BandsController < ApplicationController
     end
     
     def show
-        
+        @band = Band.find(params[:id])
     end
     
     private
