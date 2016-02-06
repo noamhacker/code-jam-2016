@@ -13,9 +13,14 @@ class BandsController < ApplicationController
     end
     
     def create
+      #debugger
+      @band = Band.new(name: params[:band][:name])
+      #@band.name = params[:bandname]
+      #debugger
       #@band = Band.create(band_params[:band])
-      @hello = params[:name]
-      @band = Band.create(name: params[:name])
+      #@hello = params[:name]
+      #@band = Band.create(name: params[:name])
+      @band.save
     if @band.save
       redirect_to @band
     else
@@ -30,7 +35,9 @@ class BandsController < ApplicationController
     end
     
     def show
-        
+ 
+              @band = Band.find(params[:id])
+
     end
     
     private
