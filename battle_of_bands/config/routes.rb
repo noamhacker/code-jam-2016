@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   get '/ameris' => 'sample#sample_action'
   resources :bands
+  
+  get '/vote' => 'pages#voting'
+  get '/bands' => 'pages#vote'
+  
   #get '/add' => 'admin#new'
 
   # Example of regular route:

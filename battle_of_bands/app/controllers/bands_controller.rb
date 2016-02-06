@@ -13,7 +13,9 @@ class BandsController < ApplicationController
     end
     
     def create
-      @band = Band.new(band_params[:band])
+      #@band = Band.create(band_params[:band])
+      @hello = params[:name]
+      @band = Band.create(name: params[:name])
     if @band.save
       redirect_to @band
     else
