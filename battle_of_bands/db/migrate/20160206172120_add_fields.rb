@@ -9,5 +9,7 @@ class AddFields < ActiveRecord::Migration
     add_column :bands, :donate_link, :string
 
 
+
+
   end
 end
