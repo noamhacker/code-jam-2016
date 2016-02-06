@@ -33,6 +33,7 @@ Project Manager: Noam Hacker
 ##### Command Line Tips
 * [Basics (Rails) ](http://guides.rubyonrails.org/command_line.html)
 * `cd`, `pwd`, `ls`, `history`, up-arrow
+* `rails new [...]`
 * `rails server -b $IP -p $PORT`
 * `debugger` in your code will pause the terminal at that point. Then write `continue` on the command line to exit the debugger.
 * `rails console`, or `rails console —sandbox` to avoid changes
@@ -47,8 +48,8 @@ Project Manager: Noam Hacker
 * `git checkout -b [new branch name]`
 * `git status`, `git log`, `git branch`
 1. `git add -A`
-2. `git commit -m "[your commit message here]"
-3. `git push origin [branch name]
+2. `git commit -m "[your commit message here]"`
+3. `git push origin [branch name]`
 4. merging branches (be careful!) [link 1](http://stackoverflow.com/questions/5601931/best-and-safest-way-to-merge-a-git-branch-into-master), [link 2](https://help.github.com/articles/using-pull-requests/)
 
 Last but not least,
