@@ -1,7 +1,18 @@
+<br><br>
+
 <%= form_for @band do |f| %>
   <%= f.label :name %>:
-  <%= f.text_field :name %><br />
+  <%= f.text_field :name %>
+  
+  <%= f.label :bio %>:
+  <%= f.text_field :bio %>
 
+  <%= f.label :location %>:
+  <%= f.text_field :location %>
+  
+  <%= f.label :donate_link %>:
+  <%= f.text_field :donate_link %>
+  
   <%= f.label :website %>:
   <%= f.text_field :website %><br />
 

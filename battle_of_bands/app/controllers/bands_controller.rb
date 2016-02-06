@@ -14,7 +14,7 @@ class BandsController < ApplicationController
     
     def create
       #debugger
-      @band = Band.new(name: params[:band][:name])
+      @band = Band.new(name: params[:band][:name], bio: params[:band][:bio], location: params[:band][:location], website: params[:band][:website], donate_link: params[:band][:donate_link])
       #@band.name = params[:bandname]
       #debugger
       #@band = Band.create(band_params[:band])
@@ -42,7 +42,7 @@ class BandsController < ApplicationController
     
     private
     def band_params
-      params.require(:band).permit(:name, :website)
+      params.require(:band).permit(:name, :website, :bio, :location, :donate_link)
     end
 
 end
