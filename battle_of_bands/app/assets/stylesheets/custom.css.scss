@@ -1,0 +1,29 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.h1 {
+    font-size: 1.5em;
+}
+
+.band {
+    position:relative;
+    width:100%;
+    min-height: 200px;
+    background-color:gray;
+}
+
+.band-img{
+    position:relative;
+    display: inline block;
+    width: 200px;
+    height: 200px;
+    background-color:yellow;
+    z-index:1000;
+}
+
+.band-info{
+    position:relative;
+    display: inline block;
+    height: 200px;
+    background-color:orange;
+}
