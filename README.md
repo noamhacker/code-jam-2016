@@ -21,7 +21,7 @@ Project Manager: Noam Hacker
 ##### Environment Set-Up
 1. Sign up for github if you don't have an account yet
 2. Get added as a collaborator to this repository
-2. [Cloud9 IDE (c9.io)](c9.io): **Sign up with your github account!**
+2. [Cloud9 IDE (c9.io)](https://c9.io): **Sign up with your github account!**
 3. Create a new workspace in Cloud9
   1. Fill out the **Clone from Git** field with "https://github.com/noamhacker/code-jam-2016"
   2. Choose the **"Ruby on Rails Tutorial"** template - **not** the "ruby" one
