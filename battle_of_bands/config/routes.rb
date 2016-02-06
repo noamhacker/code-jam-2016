@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   get '/ameris' => 'sample#sample_action'
   
+  
   get '/home' => 'pages#home'
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
