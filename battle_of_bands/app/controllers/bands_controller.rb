@@ -14,20 +14,29 @@ class BandsController < ApplicationController
     
     def create
       #debugger
-      @band = Band.new(name: params[:band][:name], bio: params[:band][:bio], location: params[:band][:location], website: params[:band][:website], donate_link: params[:band][:donate_link])
+      if params[:band][:password] == "password"
+        @band = Band.new(name: params[:band][:name], bio: params[:band][:bio], location: params[:band][:location], website: params[:band][:website], donate_link: params[:band][:donate_link])
+        if @band.save
+            redirect_to @band
+        else
+            render "new"
+        end
+      else
+        #flash.now[:alert] = 'Incorrect password!'
+        redirect_to "/bands/new", :flash => { :success => "no" }
+      end
+      
       #@band.name = params[:bandname]
       #debugger
       #@band = Band.create(band_params[:band])
       #@hello = params[:name]
+      
       #@band = Band.create(name: params[:name])
-      @band.save
-    if @band.save
-      redirect_to @band
-    else
-      # This line overrides the default rendering behavior, which
-      # would have been to render the "create" view.
-      render "new"
-     end
+      
+       #@band.save
+      # redirect_to @band
+         
+      
     end
     
     def edit
