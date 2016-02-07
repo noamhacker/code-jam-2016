@@ -1,20 +1,35 @@
+   <div class="container"><h1>THE BANDS</h1>
+  
+   <% if Band.count == 0 %>
+     No bands have been added yet.
+   <% end %>
+   
+   </div>   
+
 <% @list.each do |b| %>
 
     
     <div class="container">
+
 <div class="row">
-  <div class="col-md-3 col-sm-12 band-img img-responsive">
+  <div class="col-md-3 col-sm-3 col-xs-12 band-img img-responsive">
       </div>
-  <div class="col-md-9 col-sm-12 band-info">  
+  <div class="col-md-9 col-sm-9 col-xs-12 band-info">  
       <h2><%= b.name%></h2>
+      <h3>Rate this band:</h3>
           <span class="rating">
-            <h3>Average Score:
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-             </h3>
+            <form>
+              <fieldset>
+                <span class="star-cb-group">
+                  <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                  <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+                  <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                  <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                  <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                  <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+                </span>
+              </fieldset>
+            </form>
           </span>
       
       <p><%= b.bio %></p>
@@ -24,7 +39,7 @@
       <button type="button" class="btn btn-lg btn-success">DONATE</button>
       <button type="button" class="btn btn-lg btn-info">VOTE NOW</button>
       <% share_string = "/bands/" + b.id.to_s %>
-      <button type="button" class="btn btn-lg btn-warning"><%= link_to('Share', share_string, html_options = {}) %></button>
+      <button type="button" class="btn btn-lg btn-warning"><%= link_to('SHARE', share_string, html_options = {}) %></button>
       </div>
   </div>
 </div><!-- row-->
