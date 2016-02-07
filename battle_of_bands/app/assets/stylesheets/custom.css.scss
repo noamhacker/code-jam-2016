@@ -46,6 +46,14 @@ h1{
         z-index:1;
 }
 
+.bandform{
+    color: #000;
+}
+
+.bandform label{
+    color: #FFF;
+}
+
 .social_share{
     position: relative;
     display:inline block;
@@ -94,4 +102,71 @@ li>a{
 
 li a:hover{
     color:#0cd3c8;
+}
+
+
+/*stars */
+form {
+  width: 200px;
+}
+.star-cb-group {
+  display: block;
+  width: 160px;
+  /* remove inline-block whitespace */
+  font-size: 0;
+  /* flip the order so we can use the + and ~ combinators */
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  /* the hidden clearer */
+  /* this is gross, I threw this in to override the starred
+     buttons when hovering. */
+}
+.star-cb-group * {
+  font-size: 32px;
+}
+.star-cb-group > [type*="radio"] {
+  display: none;
+}
+.star-cb-group > [type*="radio"] + label {
+  /* only enough room for the star */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 1em;
+  height: 1.4em;
+  white-space: nowrap;
+}
+.star-cb-group > [type*="radio"] + label:before {
+  display: inline-block;
+  text-indent: -9999px;
+  content: '\2606';
+  /* WHITE STAR */
+  color: #888;
+}
+.star-cb-group > [type*="radio"]:checked ~ label:before, .star-cb-group > [type*="radio"] + label:hover ~ label:before, .star-cb-group > [type*="radio"] + label:hover:before {
+  content: '\2605';
+  /* BLACK STAR */
+  color: #e52;
+  text-shadow: 0 0 1px #333;
+}
+.star-cb-group > .star-cb-clear[type*="radio"] + label {
+  text-indent: -9999px;
+  width: .5em;
+  margin-left: -.5em;
+}
+.star-cb-group > .star-cb-clear[type*="radio"] + label:before {
+  width: .5em;
+  height: 1.4em;
+}
+.star-cb-group:hover > [type*="radio"] + label:before {
+  content: '\2606';
+  /* WHITE STAR */
+  color: #888;
+  text-shadow: none;
+}
+.star-cb-group:hover > [type*="radio"] + label:hover ~ label:before, .star-cb-group:hover > [type*="radio"] + label:hover:before {
+  content: '\2605';
+  /* BLACK STAR */
+  color: #e52;
+  text-shadow: 0 0 1px #333;
 }
