@@ -24,7 +24,8 @@
    
       <button type="button" class="btn btn-lg btn-success">DONATE</button>
       <button type="button" class="btn btn-lg btn-info">VOTE NOW</button>
-      <button type="button" class="btn btn-lg btn-warning">SHARE</button>
+      <% share_string = "/bands/" + b.id.to_s %>
+      <button type="button" class="btn btn-lg btn-warning"><%= link_to('Share', share_string, html_options = {}) %></button>
       </div>
   </div>
 </div><!-- row-->
