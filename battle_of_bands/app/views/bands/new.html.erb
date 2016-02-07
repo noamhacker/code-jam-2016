@@ -1,14 +1,14 @@
 <div class="container">
   <div id="tools">
-<div class="row"> 
-<div class="col-md-12 col-sm-12"><h1>Welcome back, ADMIN.</h1> 
+<div class="row">
+<div class="col-md-12 col-sm-12"><h1>Welcome back, ADMIN.</h1>
 <br>
 <br>
   <div class="row tools">
   <div class="col-lg-6">
-          <button type="button" class="btn btn-success">  <span class="glyphicon glyphicon glyphicon-plus"></span> ADD NEW BAND</button> 
+          <button type="button" class="btn btn-success">  <span class="glyphicon glyphicon glyphicon-plus"></span> ADD NEW BAND</button>
 <button type="button" class="btn btn-danger"> <span class="glyphicon glyphicon glyphicon-remove"></span> CLEAR ALL</button>
-
+ 
   </div><!-- /.col-lg-6 -->
   <div class="col-lg-4">
     <div class="input-group">
@@ -18,84 +18,54 @@
       </span>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-4 -->
-  
-    <div class="col-lg-2 pull-right">   
+ 
+    <div class="col-lg-2 pull-right">  
     <label>
       <span style="font-family:'Oswald',sans; color:#000; "> VOTING STATE:</span>
       <input type="checkbox"  checked data-toggle="toggle">
         </label></div>
 </div><!-- /.row -->
-  
+ 
   <div class="container">
+    <div class="bandform">
 <%= form_for @band do |f| %>
 <br>
-  <%= f.label :name %>:
+  <%= f.label :name %>:<br>
   <%= f.text_field :name %><br>
-  
-  <%= f.label :bio %>:
+ 
+  <%= f.label :bio %>:<br>
   <%= f.text_area :bio %><br>
-
+ 
   <%= f.label :location %>:
   <%= f.text_field :location %><br>
-  
+ 
   <%= f.label :donate_link %>:
   <%= f.text_field :donate_link %><br>
-  
+ 
   <%= f.label :website %>:
   <%= f.text_field :website %><br />
-  
+ 
   <%= f.label :password %><br />
   <%= f.password_field :password %><br />
-
+ 
   <%= f.submit %>
 <% end %>
 </div>
-
-  
+</div>
+ 
+ 
  </div>
-
+ 
 </div>
 </div>
 <br>
-
+ 
 <div class="col-md-12 band">
+ 
 
-<div class="row">
-  <div class="col-md-4 col-sm-12 band-img img-responsive">
-      </div>
-  <div class="col-md-8 col-sm-12 band-info">  
-      <h2>DRAKE</h2>
-        <h4>TORONTO, ONTARIO</h4>
-          <span class="rating">
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-             <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-          </span>
-    
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie est lacus, ac 
-      tristique leo ornare nec. Maecenas urna orci, pellentesque id viverra a, ullamcorper vel metus. </p>
-      
-      <div class="btn-group" role="group" aria-label="...">
-   
-      <button type="button" class="btn btn-success"> <span class="glyphicon glyphicon glyphicon-pencil"></span> EDIT</button>
-      <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon glyphicon-remove"> </span> DELETE</button>
-      
-  
-
-      </div>
-      
-      
-      
-  </div>
-</div><!-- row-->
-
-
+ 
   </div><!--end of band-info-->
-  
-  
-  
+ 
+ 
+ 
 </div><!-- end of container-->
-
-
