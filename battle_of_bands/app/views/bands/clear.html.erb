@@ -1,0 +1,18 @@
+<% if params[:clear_password] == "password" %>
+    <div class="container">
+        <!-- DANGER ZONE -->
+        <% if Band.destroy_all %>
+            All bands cleared.
+        <% else %>
+            Error clearing bands.
+        <% end %>
+        <br>
+        <%= link_to('Go back', '/admin', html_options = {}) %>
+    </div>
+<% else %>
+    <div class="container">
+        Incorrect password!
+        <br>
+        <%= link_to('Go back', '/admin', html_options = {}) %>
+    </div>
+<% end %>

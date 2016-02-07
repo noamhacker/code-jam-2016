@@ -18,7 +18,13 @@ Rails.application.routes.draw do
   resources :bands
   
   get '/vote' => 'pages#voting'
+  post '/vote' => 'pages#voting'
   get '/bands' => 'pages#vote'
+  
+  post '/clear' => 'bands#clear'
+  
+  #connect '/admin', :controller => 'bands', :action => 'clear_all'
+  #match "/clear_all", :to => 'bands#clear_all'
   
   #get '/add' => 'admin#new'
 

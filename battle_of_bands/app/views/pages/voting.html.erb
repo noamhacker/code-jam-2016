@@ -1,4 +1,10 @@
-   <div class="container"><h1>THE BANDS</h1></div>
+   <div class="container"><h1>THE BANDS</h1>
+  
+   <% if Band.count == 0 %>
+     No bands have been added yet.
+   <% end %>
+   
+   </div>   
 
 <% @list.each do |b| %>
 

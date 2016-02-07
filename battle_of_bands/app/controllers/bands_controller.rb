@@ -54,4 +54,5 @@ class BandsController < ApplicationController
       params.require(:band).permit(:name, :website, :bio, :location, :donate_link)
     end
 
+
 end

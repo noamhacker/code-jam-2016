@@ -28,6 +28,7 @@
  
   <div class="container">
     <div class="bandform">
+      <strong><span style="color:white">Add new band</span></strong>
 <%= form_for @band do |f| %>
 <br>
   <%= f.label :name %>:<br>
@@ -50,6 +51,18 @@
  
   <%= f.submit %>
 <% end %>
+
+<hr>
+</div>
+<div class="bandform">
+
+<span style="color:white"><strong>Clear all bands (caution: cannot be undone!)</strong></span><br>
+<%= form_tag({:action => :clear}, :multipart => true) do %>
+  <span style="color:white">Password<br></span>
+  <%= password_field_tag "clear_password" %><br><br>
+  <%= submit_tag "Clear" %>
+<% end %>
+
 </div>
 </div>
  
@@ -58,13 +71,6 @@
  
 </div>
 </div>
-<br>
- 
-<div class="col-md-12 band">
- 
-
- 
-  </div><!--end of band-info-->
  
  
  
