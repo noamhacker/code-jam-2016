@@ -2,7 +2,7 @@ code-jam-2016
 ===
 ### A battle of the bands web app for the Rock For Dimes fundraiser. 
 ##### Code Jam takes place February 6th, at Queen's University.
-Team: [fill out names here]<br>
+Team: Rui Jie Wang, Vanessa Lum, Ameris Rudland<br>
 Project Manager: Noam Hacker
 
 ----------
@@ -17,6 +17,7 @@ Project Manager: Noam Hacker
 * [Find gems](https://rubygems.org/)
 * [Another resource](https://www.codecademy.com/learn/learn-rails)
 * [HTTP requests in ruby](http://ruby-doc.org/stdlib-2.3.0/libdoc/net/http/rdoc/Net/HTTP.html), and their [status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+* [Some instructions for heroku](https://www.railstutorial.org/book/beginning#code-gemfile_pg_gem)
 
 ##### Environment Set-Up
 1. Sign up for github if you don't have an account yet
