@@ -19903,3 +19903,34 @@ Completed 200 OK in 123ms (Views: 120.3ms | ActiveRecord: 0.8ms)
 
 Started GET "/assets/MFD_img_placeholder.jpg" for 99.236.19.156 at 2016-02-09 02:26:34 +0000
 Cannot render console from 99.236.19.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 99.236.19.156 at 2016-02-09 03:52:52 +0000
+Cannot render console from 99.236.19.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (10.8ms)
+Completed 200 OK in 642ms (Views: 622.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vote" for 99.236.19.156 at 2016-02-09 03:52:55 +0000
+Cannot render console from 99.236.19.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#voting as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "bands"
+  [1m[36mBand Load (0.2ms)[0m  [1mSELECT "bands".* FROM "bands"[0m
+  Rendered pages/voting.html.erb within layouts/application (22.6ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 197ms (Views: 191.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/MFD_img_placeholder.jpg" for 99.236.19.156 at 2016-02-09 03:52:55 +0000
+Cannot render console from 99.236.19.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 99.236.19.156 at 2016-02-09 03:52:59 +0000
+Cannot render console from 99.236.19.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 121ms (Views: 120.6ms | ActiveRecord: 0.0ms)
