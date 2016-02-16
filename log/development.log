@@ -20569,3 +20569,11 @@ Processing by PagesController#home as HTML
   Rendered pages/home.html.erb within layouts/application (4.3ms)
   Rendered layouts/_header.html.erb (1.0ms)
 Completed 200 OK in 462ms (Views: 448.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 208.65.73.110 at 2016-02-16 21:02:23 +0000
+Cannot render console from 208.65.73.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 209ms (Views: 207.7ms | ActiveRecord: 0.0ms)
