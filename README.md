@@ -5,6 +5,8 @@ code-jam-2016
 Team: Rui Jie Wang, Vanessa Lum, Ameris Rudland<br>
 Project Manager: Noam Hacker
 
+#####Live site: http://rock-for-dimes.herokuapp.com/ (built with Ruby on Rails)
+
 ----------
 
 #**Team Cheat Sheet!**
